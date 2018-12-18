@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tagagotchi</title>
+    <link href='stylee.css' rel='stylesheet' />
+    <script src='game.js'></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="titreHeader">
+            <img id="myImage" class="fit-picture"src="logoHeader.png"/>
+        </div>
+    </div>
+
+    <div class="game">
+
+        <div id="tete" class="tagagotch">
+
+            <div class="ecran">
+
+                <div class="perso">
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="baseController">
+
+        <div class="controller">
+
+            <button id="click">manger</button>
+            <button id="click2">dormir</button>
+
+            <script type="text/javascript">
+
+                let buttonBalader = document.getElementById("click");
+
+                buttonBalader.addEventListener("click", function () {
+                    document.querySelector('.tagagotch').style.backgroundImage = "url('manger.gif')"
+
+                });
+                let buttonBalader2 = document.getElementById("click2");
+
+                buttonBalader2.addEventListener("click", function () {
+                    let imageUrl = "url('dormir.gif')";
+                    document.querySelector('.tagagotch').style.backgroundImage = imageUrl;
+
+                });
+
+
+
+            </script>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
